@@ -53,7 +53,7 @@ const paths = {
 
 export const serve = (done) => {
 	server.init({
-		proxy: "http://localhost/firsttheme/"
+		proxy: "http://localhost/claudia-dev/"
 	});
 	done();
 }

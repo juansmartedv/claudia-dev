@@ -146,9 +146,9 @@ function claudiasiciliano_scripts() {
 	wp_enqueue_style( 'claudiasiciliano-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'claudiasiciliano-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'claudiasiciliano-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'claudiasiciliano-navigation', get_template_directory_uri() . '/src/assets/js/navigation.js', array(), _S_VERSION, true );
 
-	wp_enqueue_script( 'claudiasiciliano-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'claudiasiciliano-skip-link-focus-fix', get_template_directory_uri() . '/src/assets/js/skip-link-focus-fix.js', array(), _S_VERSION, true );
 	
 
 	//Enqueue custom styles
@@ -163,6 +163,9 @@ function claudiasiciliano_scripts() {
 	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, true);
 	wp_enqueue_script('popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', array(), null, true);
 	wp_enqueue_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', array(), null, true);
+
+	//Bundle js
+	wp_enqueue_script('bundle', get_template_directory_uri() . '/dist/assets/js/bundle.js', array('jquery'));
 }
 add_action( 'wp_enqueue_scripts', 'claudiasiciliano_scripts' );
 

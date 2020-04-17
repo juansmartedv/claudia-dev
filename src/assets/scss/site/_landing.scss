@@ -79,3 +79,30 @@
 
   }
 }
+
+.packages {
+  background-color: navy;
+  text-align: center;
+
+  .container {
+    border: 1px solid pink;
+  }
+
+  .slide-package {
+    background-color: pink;
+    
+    img {
+      width: 70px;
+    }
+
+    .slide-title {
+      font-weight: 800;
+    }
+
+    .slide-content {
+
+    }
+  }
+
+
+}

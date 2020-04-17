@@ -145,21 +145,66 @@ get_header(); ?>
     <div class="row align-items-start justify-content-center py-3">
       <div class="col-md-4">
         <div class="blurb">
-          <img src="<?php echo img_path; ?>conferencias-icon.svg" alt="conferencias">
-          <p>Conferencias</p>
+          <a href="#!"><img src="<?php echo img_path; ?>conferencias-icon.svg" alt="conferencias"></a>
+          <a href="#!"><p>Conferencias</p></a>
         </div>
       </div>
       <div class="col-md-4">
         <div class="blurb">
-          <img src="<?php echo img_path; ?>conferencias-icon.svg" alt="talleres online y presencial">
-          <p>Talleres online y presenciales</p>
+          <a href="#!"><img src="<?php echo img_path; ?>conferencias-icon.svg" alt="talleres online y presencial"></a>
+          <a href="#!"><p>Talleres online y presenciales</p></a>
         </div>
       </div>
       <div class="col-md-4">
         <div class="blurb">
-          <img src="<?php echo img_path; ?>tienda-icon.svg" alt="Tienda">
-          <p>Tienda</p>
+          <a href="#!"><img src="<?php echo img_path; ?>tienda-icon.svg" alt="Tienda"></a>
+          <a href="#!"><p>Tienda</p></a>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="packages py-5">
+  <div class="container">
+    <div class="row py-3">
+      <div class="col-md-6 mx-auto">
+        <img src="<?php echo img_path; ?>paquetes.svg" alt="paquetes" class="mb-3">
+        <div class="slider-package">
+        
+          <div class="slider-element">
+            <div class="slide-package py-2">
+              <img src="<?php echo img_path; ?>paquetes-icon.svg" alt="package-icon">
+              <div class="slide-title"><p>Plan Individual Silver</p></div>
+              <div class="slide-content"><p>Incluye 5 sesiones online o presenciales. <br>
+              Valor: 427$</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-element">
+            <div class="slide-package py-2">
+              <img src="<?php echo img_path; ?>paquetes-icon.svg" alt="package-icon">
+              <div class="slide-title"><p>Plan Individual Silver</p></div>
+              <div class="slide-content"><p>Incluye 5 sesiones online o presenciales. <br>
+              Valor: 427$</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="slider-element">
+            <div class="slide-package py-2">
+              <img src="<?php echo img_path; ?>paquetes-icon.svg" alt="package-icon">
+              <div class="slide-title"><p>Plan Individual Silver</p></div>
+              <div class="slide-content"><p>Incluye 5 sesiones online o presenciales. <br>
+              Valor: 427$</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
       </div>
     </div>
   </div>

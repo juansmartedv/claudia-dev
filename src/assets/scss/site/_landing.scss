@@ -1,0 +1,81 @@
+.header {
+
+  text-align: center;
+  color: navy;
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .brand {
+    color: pink;
+    font-size: 2rem;
+  } 
+
+  .social {
+    a {
+      margin-right: 20px;
+      
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  .custom-pic {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+.cta {
+  background-color: navy;
+
+  p {
+    color: white;
+    text-align: center;
+  }
+
+  .call-to-action {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+}
+
+.about-me {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+
+  h2 {
+    color: navy;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: navy;
+  }
+}
+
+.services {
+  background-color: navy;
+
+  .blurb {
+    text-align: center;
+    color: white;
+
+    img {
+      width: 80px;
+    }
+
+    p {
+      margin-top: 20px;
+      color: pink;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+    }
+
+  }
+}

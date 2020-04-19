@@ -12,7 +12,7 @@ get_header(); ?>
       </div>
 
       <div class="col-md-5">
-        <div class="content py-5">
+        <div class="content py-5" >
           <h1>¡Hola!</h1>
           <p>Claudia Siciliano Gill. <br>
           M.Sc Psicologo clinico y Life coach <br>
@@ -120,7 +120,7 @@ get_header(); ?>
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6">
-        <h2>Sobre Mí</h2>
+        <img src="<?php echo img_path; ?>sobremi.svg" alt="Sobre mi" class="pic">
         <p>Estudié psicología en la universidad Rafael Urdaneta e inicie
           mi práctica privada en 2008 , realicé mi primer postgrado en
           Recursos Humanos e inicié mi propia empresa en busca del
@@ -134,7 +134,7 @@ get_header(); ?>
           familiares que nos hacen daño, también escogemos personas que
           nos truncan el camino y nos dejan heridos o rotos.</p>
       </div>
-      <div class="col-md-6 pic">
+      <div class="col-md-6 pic" data-aos="fade-left">
         <img src="<?php echo img_path; ?>397225-10151188806455188-847040187-22945958-1602290701-n.jpg" alt="bio-pic">
       </div>
     </div>
@@ -145,18 +145,18 @@ get_header(); ?>
   <div class="container">
     <div class="row align-items-start justify-content-center py-3">
       <div class="col-md-4">
-        <div class="blurb">
+        <div class="blurb" data-aos="zoom-in">
           <a href="#!"><img src="<?php echo img_path; ?>conferencias-icon.svg" alt="conferencias"></a>
           <a href="#!"><p>Conferencias</p></a>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="zoom-in">
         <div class="blurb">
           <a href="#!"><img src="<?php echo img_path; ?>conferencias-icon.svg" alt="talleres online y presencial"></a>
           <a href="#!"><p>Talleres online y presenciales</p></a>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4" data-aos="zoom-in">
         <div class="blurb">
           <a href="#!"><img src="<?php echo img_path; ?>tienda-icon.svg" alt="Tienda"></a>
           <a href="#!"><p>Tienda</p></a>
@@ -177,8 +177,7 @@ get_header(); ?>
             <div class="slide-package py-2">
               <img src="<?php echo img_path; ?>paquetes-icon.svg" alt="package-icon">
               <div class="slide-title"><p>Plan Individual Silver</p></div>
-              <div class="slide-content"><p>Incluye 5 sesiones online o presenciales. <br>
-              Valor: 427$</p>
+              <div class="slide-content"><p>Incluye 5 sesiones online o presenciales.</p>
               </div>
             </div>
           </div>
@@ -187,8 +186,7 @@ get_header(); ?>
             <div class="slide-package py-2">
               <img src="<?php echo img_path; ?>paquetes-icon.svg" alt="package-icon">
               <div class="slide-title"><p>Plan Individual Silver</p></div>
-              <div class="slide-content"><p>Incluye 5 sesiones online o presenciales. <br>
-              Valor: 427$</p>
+              <div class="slide-content"><p>Incluye 5 sesiones online o presenciales.</p>
               </div>
             </div>
           </div>
@@ -197,8 +195,7 @@ get_header(); ?>
             <div class="slide-package py-2">
               <img src="<?php echo img_path; ?>paquetes-icon.svg" alt="package-icon">
               <div class="slide-title"><p>Plan Individual Silver</p></div>
-              <div class="slide-content"><p>Incluye 5 sesiones online o presenciales. <br>
-              Valor: 427$</p>
+              <div class="slide-content"><p>Incluye 5 sesiones online o presenciales.</p>
               </div>
             </div>
           </div>
@@ -216,8 +213,8 @@ get_header(); ?>
   <div class="container">
     <!-- row -->
     <div class="row banner align-items-center">
-      <div class="col-md-4 banner-pic">
-        <img src="<?php echo img_path; ?>396021-10151188804145188-847040187-22945951-1693049455-n.jpg" alt="">
+      <div class="col-md-4 banner-pic" >
+        <img src="<?php echo img_path; ?>396021-10151188804145188-847040187-22945951-1693049455-n.jpg">
       </div>
       <div class="col-md-8">
         <div class="banner-content py-5">
@@ -253,14 +250,14 @@ get_header(); ?>
       <div class="row align-items-start">
 
         <div class="col-md-4">
-          <div class="contact-info d-flex flex-column align-items-center">
+          <div class="contact-info d-flex flex-column align-items-center mb-5">
             <img src="<?php echo img_path; ?>tlf-icon.svg" alt="phone">
             <p>+1 786 3182930</p>
           </div>
 
           <div class="contact-info d-flex flex-column align-items-center">
-            <img src="<?php echo img_path; ?>tlf-icon.svg" alt="phone">
-            <p>+1 786 3182930</p>
+            <img src="<?php echo img_path; ?>mail-icon.svg" alt="mail">
+            <p>hola@claudiasiciliano.com</p>
           </div>
         </div>
 

@@ -387,25 +387,25 @@ big {
 
 @font-face {
   font-family: "Metropolis";
-  src: url("/claudia-dev/wp-content/themes/claudiasiciliano/src/assets/fonts/Metropolis-Regular.otf") format("opentype");
+  src: url("/wp-content/themes/claudiasiciliano/src/assets/fonts/Metropolis-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: "Metropolis";
-  src: url("/claudia-dev/wp-content/themes/claudiasiciliano/src/assets/fonts/Metropolis-SemiBoldItalic.otf") format("opentype");
+  src: url("/wp-content/themes/claudiasiciliano/src/assets/fonts/Metropolis-SemiBoldItalic.otf") format("opentype");
   font-weight: 700;
   font-style: italic; }
 
 @font-face {
   font-family: "Metropolis";
-  src: url("/claudia-dev/wp-content/themes/claudiasiciliano/src/assets/fonts/Metropolis-SemiBold.otf") format("opentype");
+  src: url("/wp-content/themes/claudiasiciliano/src/assets/fonts/Metropolis-SemiBold.otf") format("opentype");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "Metropolis";
-  src: url("/claudia-dev/wp-content/themes/claudiasiciliano/src/assets/fonts/Metropolis-ExtraLight.otf") format("opentype");
+  src: url("/wp-content/themes/claudiasiciliano/src/assets/fonts/Metropolis-ExtraLight.otf") format("opentype");
   font-weight: 300;
   font-style: normal; }
 
@@ -1072,7 +1072,7 @@ body {
     background-size: 0% 0%, 0% 0%,  0% 0%,  0% 0%,  0% 0%,  0% 0%; } }
 
 .contact-me {
-  background: url("/claudia-dev/wp-content/themes/claudiasiciliano/dist/assets/images/bg-2.png");
+  background: url("/wp-content/themes/claudiasiciliano/dist/assets/images/bg-2.png");
   background-size: cover;
   background-repeat: no-repeat; }
   .contact-me .banner {

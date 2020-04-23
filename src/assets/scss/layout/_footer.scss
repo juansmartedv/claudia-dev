@@ -1,0 +1,15 @@
+.footer {
+  background-color: $navy;
+
+  .footer-social {
+    text-align: center;
+
+    a {
+      margin-right: 20px;
+
+      img {
+        width: 25px;
+      }
+    }
+  }
+}

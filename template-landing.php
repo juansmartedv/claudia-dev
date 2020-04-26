@@ -202,7 +202,7 @@ get_header(); ?>
         </div>
         <!--EndSlider-->
         <div class="packages-cta mt-5">
-          <a href="#!" class="bubbly-button my-3">Reserva ahora</a>
+          <a href="<?php echo get_home_url() ?>/reservation" class="bubbly-button my-3">Reserva ahora</a>
         </div>
       </div>
     </div>

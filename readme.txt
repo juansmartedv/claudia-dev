@@ -12,6 +12,11 @@ License URI: LICENSE
 
 A starter theme called ClaudiaSiciliano.
 
+FOR DEVELOPERS
+== Install Dependencies ==
+1. Run npm install
+2. Run npm start to start the project with browsersync
+
 == Description ==
 
 Claudia Siciliano Wordpress Custom Theme

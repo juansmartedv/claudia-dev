@@ -10,3 +10,9 @@
 ## Comments
 --------------------------------------------------------------*/
 @import "primary/comments";
+
+.page-template-template-booked-agent .site-content {
+  @media (max-width: 465px) {
+    height: 100vh;
+  }
+}

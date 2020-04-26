@@ -31,7 +31,7 @@
 	<nav class="navbar navbar-dark fixed-top">
         <div class="container" style="overflow-x: hidden">
  
-            <a class="navbar-brand" href="index.html"><span>HI</span></a>
+            <a class="navbar-brand" href="<?php echo get_home_url(); ?>"><img src="<?php echo img_path; ?>nombre.svg" alt="Claudia Siciliano"></a>
  
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span></span>

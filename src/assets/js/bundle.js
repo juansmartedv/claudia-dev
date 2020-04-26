@@ -31,4 +31,16 @@ jQuery(document).ready(function($){
 
   }
 
+  function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  };
+
+
+  //Woocommerce Checkout
+  $('#customer_details').addClass("row");
+  $('#order_review_heading').insertAfter('.billing-info')
+  $('.col-1').removeClass("col-1").addClass("col-md-6 billing-info");
+  $("#order_review").insertAfter(".billing-info").addClass("col-md-6 order-description");
+  $('#order_review_heading').prependTo('#order_review');
+  $('.woocommerce-additional-fields').hide();
 });

@@ -116,7 +116,7 @@ get_header(); ?>
   </div>
 </section>
 
-<section class="about-me py-5" style="background: url('<?php echo img_path; ?>bg-1.svg')">
+<section id="about-me" class="about-me py-5" style="background: url('<?php echo img_path; ?>bg-1.svg')">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6">
@@ -171,7 +171,7 @@ get_header(); ?>
     <div class="row py-3">
       <div class="col-md-6 mx-auto">
         <img src="<?php echo img_path; ?>paquetes.svg" alt="paquetes" class="mb-3">
-        <div class="slider-package">
+        <div class="slider-package" data-aos="fade-up">
         <!--Slider-->
           <div class="slider-element"> 
             <div class="slide-package py-2">
@@ -212,7 +212,7 @@ get_header(); ?>
 <section class="contact-me py-5">
   <div class="container">
     <!-- row -->
-    <div class="row banner align-items-center">
+    <div class="row banner align-items-center" data-aos="fade-right">
       <div class="col-md-4 banner-pic" >
         <img src="<?php echo img_path; ?>396021-10151188804145188-847040187-22945951-1693049455-n.jpg">
       </div>
@@ -249,7 +249,7 @@ get_header(); ?>
     <div class="contact-form">
       <div class="row align-items-start">
 
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade-left">
           <div class="contact-info d-flex flex-column align-items-center mb-5">
             <img src="<?php echo img_path; ?>tlf-icon.svg" alt="phone">
             <p>+1 786 3182930</p>
@@ -261,7 +261,7 @@ get_header(); ?>
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="zoom-in">
           <!-- contact form -->
           <?php echo do_shortcode('[contact-form-7 id="9" title="Contáctame"]'); ?>
           <!-- end contact-form -->

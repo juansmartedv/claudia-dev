@@ -200,8 +200,14 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Load WooCommerce compatibility file.
+ */
+if ( class_exists( 'WooCommerce' ) ) {
+	require get_template_directory() . '/inc/woocommerce.php';
+}
 
-function hide_admin_bar(){ return false; }
-add_filter( 'show_admin_bar', 'hide_admin_bar' );
 
 define( 'img_path', get_stylesheet_directory_uri() . '/dist/assets/images/' );
+
+add_filter('show_admin_bar', '__return_false');

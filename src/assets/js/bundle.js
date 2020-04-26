@@ -31,4 +31,11 @@ jQuery(document).ready(function($){
 
   }
 
+  //Woocommerce Checkout
+  $('#customer_details').addClass("row");
+  $('#order_review_heading').insertAfter('.billing-info')
+  $('.col-1').removeClass("col-1").addClass("col-6 billing-info");
+  $("#order_review").insertAfter(".billing-info").addClass("col-6 order-description");
+  $('#order_review_heading').prependTo('#order_review');
+  $('.woocommerce-additional-fields').hide();
 });

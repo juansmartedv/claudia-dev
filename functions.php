@@ -211,3 +211,9 @@ if ( class_exists( 'WooCommerce' ) ) {
 define( 'img_path', get_stylesheet_directory_uri() . '/dist/assets/images/' );
 
 add_filter('show_admin_bar', '__return_false');
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}

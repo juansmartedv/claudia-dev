@@ -2,13 +2,10 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8 mx-auto">
-        <p>
-        Consultas Psicológicas online disponible en todo el mundo y presenciales bajo el enfoque
-        análisis conductual aplicado o life coach en Estados Unidos y todo el mundo.
-        </p>
+       <?php the_field('cta_texto', 'option'); ?>
 
         <div class="call-to-action">
-          <a href="/reservation" style="color: white !important">Pide tu cita aquí</p>
+          <a href="<?php echo home_url();?>/reservation" style="color: white !important"><?php the_field('call_to_action', 'option'); ?></a>
         </div>
       </div>
     </div>

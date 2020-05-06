@@ -5,32 +5,25 @@
         <img src="<?php echo img_path; ?>paquetes.svg" alt="paquetes" class="mb-3">
         <div class="slider-package" data-aos="fade-up">
         <!--Slider-->
+
+        <?php if ( have_rows('slider','option') ) : ?>
+        <?php while( have_rows('slider','option') ) : the_row(); ?>
           <div class="slider-element"> 
             <div class="slide-package py-2">
-              <img src="<?php echo img_path; ?>paquetes-icon.svg" alt="package-icon">
-              <div class="slide-title"><p>Plan Individual Silver</p></div>
-              <div class="slide-content"><p>Incluye 5 sesiones online o presenciales.</p>
-              </div>
+              <img src=" <?php $sliderImg = get_sub_field('slider_image');
+                if ( $sliderImg ) {
+                  echo $sliderImg;
+                } else {
+                  echo img_path . 'paquetes-icon.svg';
+                }
+              ?> " alt="package-icon">
+              <div class="slide-title"><p><?php the_sub_field('slider_title'); ?></p></div>
+              <div class="slide-content"><?php the_sub_field('slider_info'); ?></div>
             </div>
           </div>
+        <?php endwhile;
+        endif; ?>
 
-          <div class="slider-element">
-            <div class="slide-package py-2">
-              <img src="<?php echo img_path; ?>paquetes-icon.svg" alt="package-icon">
-              <div class="slide-title"><p>Plan Individual Silver</p></div>
-              <div class="slide-content"><p>Incluye 5 sesiones online o presenciales.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="slider-element">
-            <div class="slide-package py-2">
-              <img src="<?php echo img_path; ?>paquetes-icon.svg" alt="package-icon">
-              <div class="slide-title"><p>Plan Individual Silver</p></div>
-              <div class="slide-content"><p>Incluye 5 sesiones online o presenciales.</p>
-              </div>
-            </div>
-          </div>
         </div>
         <!--EndSlider-->
         <div class="packages-cta mt-5">

@@ -2,25 +2,30 @@
   <div class="container-fluid px-0 custom-overflow">
     <div class="row no-gutters align-items-center">
       <div class="col-md-7">
-        <div class="custom-pic" style="background: url('<?php echo img_path; ?>395250-10151188806805188-847040187-22945960-631245420-n.jpg')">
+        <div class="custom-pic" style="background: url('<?php 
+          $img = get_field('header_image','option');
+        if ( $img ){
+          the_field('header_image', 'option');
+        } else {
+          echo img_path . '395250-10151188806805188-847040187-22945960-631245420-n.jpg';
+        }
+        
+        ?>')">
         </div>
       </div>
 
       <div class="col-md-5">
         <div class="content py-5" >
-          <h1>¡Hola!</h1>
-          <p>Claudia Siciliano Gill. <br>
-          M.Sc Psicologo clinico y Life coach <br>
-          Especialista en análisis de la conducta. <br>
-          </p>
+          <?php the_field('titulo','option'); ?>
+          <?php the_field('subtitulo', 'option'); ?>
 
           <div class="brand">
-            <p>#yo! Ni tan loca ..</p>
+            <?php the_field('slogan', 'option') ?>
           </div>
           <div class="row">
             <div class="col">
               <div class="social">
-                <a href="#!" class="link">
+                <a href="https://wa.me/<?php the_field('whatsapp_number','option')?>?text=<?php $msg = get_field('whatsapp_chat_text','option'); echo urlencode($msg); ?>" class="link" target="_blank">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       width="18.357px" height="18.355px" viewBox="0 0 18.357 18.355" enable-background="new 0 0 18.357 18.355" xml:space="preserve">
                     <g>
@@ -39,7 +44,7 @@
                   </svg>
                 </a>
 
-                <a href="#!" class="link">
+                <a href="https://instagram.com/<?php the_field('instagram', 'option'); ?>" class="link">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       width="16.566px" height="16.568px" viewBox="0 0 16.566 16.568" enable-background="new 0 0 16.566 16.568" xml:space="preserve">
                     <g>
@@ -69,7 +74,7 @@
                 </a>
 
 
-                <a href="#!" class="link">
+                <a href="https://linkedin.com/in/<?php the_field('linkedin', 'option'); ?>" class="link">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       width="17.777px" height="16.992px" viewBox="0 0 17.777 16.992" enable-background="new 0 0 17.777 16.992" xml:space="preserve">
                     <g>

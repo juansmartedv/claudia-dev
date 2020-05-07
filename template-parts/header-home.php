@@ -44,7 +44,7 @@
                   </svg>
                 </a>
 
-                <a href="https://instagram.com/<?php the_field('instagram', 'option'); ?>" class="link">
+                <a href="https://instagram.com/<?php the_field('instagram', 'option'); ?>" class="link" target="_blank">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       width="16.566px" height="16.568px" viewBox="0 0 16.566 16.568" enable-background="new 0 0 16.566 16.568" xml:space="preserve">
                     <g>
@@ -74,7 +74,7 @@
                 </a>
 
 
-                <a href="https://linkedin.com/in/<?php the_field('linkedin', 'option'); ?>" class="link">
+                <a href="https://linkedin.com/in/<?php the_field('linkedin', 'option'); ?>" class="link" target="_blank">
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                       width="17.777px" height="16.992px" viewBox="0 0 17.777 16.992" enable-background="new 0 0 17.777 16.992" xml:space="preserve">
                     <g>

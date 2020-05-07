@@ -3,20 +3,18 @@
     <!-- row -->
     <div class="row banner align-items-center" data-aos="fade-right">
       <div class="col-md-4 banner-pic" >
-        <img src="<?php echo img_path; ?>396021-10151188804145188-847040187-22945951-1693049455-n.jpg">
+        <img src="<?php $imgBanner = get_field('image_banner','option');
+          if ( $imgBanner ) {
+            echo $imgBanner;
+          } else {
+            echo img_path . '396021-10151188804145188-847040187-22945951-1693049455-n.jpg';
+          }
+        
+        ?>">
       </div>
       <div class="col-md-8">
         <div class="banner-content py-5">
-          <p>
-         <span><strong> ¿Por qué “Yo! Ni tan loca...”?</strong></span> <br>
-          Es un llamado a la cordura , a que te detengas a escuchar
-          tu propio ser, porque no hay mayor guía que tu intuición.
-          Ni tan loco está la persona que es consciente de su malestar,
-          de su deseo por buscar su felicidad, por eso mi reconocimiento
-          a aquellas familias que creen que buscar apoyo es necesario y
-          es de personas sanas. Por que el que busca apoyo,
-          es una persona sana, no está tan loca.
-          </p>
+          <?php the_field('banner_text','option'); ?>
         </div>
       </div>
     </div> <!-- endrow -->
@@ -41,12 +39,12 @@
         <div class="col-md-4" data-aos="fade-left">
           <div class="contact-info d-flex flex-column align-items-center mb-5">
             <img src="<?php echo img_path; ?>tlf-icon.svg" alt="phone">
-            <p>+1 786 3182930</p>
+            <p><?php the_field('phone_number','option'); ?></p>
           </div>
 
           <div class="contact-info d-flex flex-column align-items-center">
             <img src="<?php echo img_path; ?>mail-icon.svg" alt="mail">
-            <p>hola@claudiasiciliano.com</p>
+            <p><?php the_field('mail','option'); ?></p>
           </div>
         </div>
 

@@ -1,0 +1,53 @@
+@media screen and (min-width: 768px) {
+
+	.col2-set {
+
+		.form-row-first {
+			float: left;
+			margin-right: $columns__margin;
+		}
+
+		.form-row-last {
+			float: right;
+			margin-right: 0;
+		}
+
+		.form-row-first,
+		.form-row-last {
+
+			@include column-width(2);
+		}
+	}
+}
+
+.woocommerce-info {
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	background-color: $navy !important;
+	color: white;
+
+	a {
+		color: white;
+	}
+}
+
+.wc_payment_methods {
+	margin: 0 0 20px 0 !important;
+	background-color: $navy;
+	color: white;
+	padding: 40px;
+	border-radius: 4px;
+} 
+
+.button {
+	border: none;
+	background-color: $pink;
+	color: white;
+}
+
+.place-order {
+	.button {
+		font-size: 24px !important;
+		float: right;
+	}
+}

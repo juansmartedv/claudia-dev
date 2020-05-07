@@ -19,7 +19,7 @@ const PRODUCTION = yargs.argv.prod;
 
 const paths = {
 	styles: {
-		src: ['src/assets/scss/style.scss','src/assets/scss/admin.scss'],
+		src: ['src/assets/scss/bundle.scss','src/assets/scss/admin.scss'],
 		dest: 'dist/assets/css'
 	},
 	images: {
@@ -53,7 +53,7 @@ const paths = {
 
 export const serve = (done) => {
 	server.init({
-		proxy: "http://localhost/firsttheme/"
+		proxy: "http://localhost/claudia-dev/"
 	});
 	done();
 }

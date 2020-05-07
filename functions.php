@@ -50,7 +50,7 @@ if ( ! function_exists( 'claudiasiciliano_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'claudiasiciliano' ),
+				'primary' => esc_html__( 'Primary', 'claudiasiciliano' ),
 			)
 		);
 
@@ -146,13 +146,30 @@ function claudiasiciliano_scripts() {
 	wp_enqueue_style( 'claudiasiciliano-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'claudiasiciliano-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'claudiasiciliano-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'claudiasiciliano-navigation', get_template_directory_uri() . '/src/assets/js/navigation.js', array(), _S_VERSION, true );
 
-	wp_enqueue_script( 'claudiasiciliano-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'claudiasiciliano-skip-link-focus-fix', get_template_directory_uri() . '/src/assets/js/skip-link-focus-fix.js', array(), _S_VERSION, true );
+	
+
+	//Enqueue custom styles
+	wp_enqueue_style('claudiasiciliano', get_template_directory_uri() . '/dist/assets/css/bundle.css');
+	wp_enqueue_style('slick-css', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
+	wp_enqueue_style('aos-css', 'https://unpkg.com/aos@next/dist/aos.css');
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	wp_enqueue_style('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
+
+	wp_deregister_script('jquery');
+	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), null, true);
+	wp_enqueue_script('popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', array(), null, true);
+	wp_enqueue_script('bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', array(), null, true);
+	wp_enqueue_script('slick-js', '//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js', array('jquery'));
+	wp_enqueue_script('aos', 'https://unpkg.com/aos@next/dist/aos.js', array(), null, true);
+
+	//Bundle js
+	wp_enqueue_script('bundle', get_template_directory_uri() . '/dist/assets/js/bundle.js', array('jquery'));
 }
 add_action( 'wp_enqueue_scripts', 'claudiasiciliano_scripts' );
 
@@ -183,3 +200,20 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
+/**
+ * Load WooCommerce compatibility file.
+ */
+if ( class_exists( 'WooCommerce' ) ) {
+	require get_template_directory() . '/inc/woocommerce.php';
+}
+
+
+define( 'img_path', get_stylesheet_directory_uri() . '/dist/assets/images/' );
+
+add_filter('show_admin_bar', '__return_false');
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}

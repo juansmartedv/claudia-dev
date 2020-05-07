@@ -13,6 +13,8 @@ get_header(); ?>
 
 <?php include('template-parts/packages.php') ?>
 
+<?php include('template-parts/instagram-feed.php') ?>
+
 <?php include('template-parts/contact-me.php') ?>
 
 <?php get_footer(); ?>

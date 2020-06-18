@@ -43,4 +43,27 @@ jQuery(document).ready(function($){
   $("#order_review").insertAfter(".billing-info").addClass("col-md-6 order-description");
   $('#order_review_heading').prependTo('#order_review');
   $('.woocommerce-additional-fields').hide();
+
+  $('.tooltipstered').on("click", function($){
+    let bookDate = setInterval(function(){
+        if ( jQuery('.new-appt').length ) {
+            clearInterval(bookDate);
+            jQuery('.new-appt').on("click", function(){
+               let bookForm = setInterval(function(){
+                    if ( jQuery('.booked-form').length ){
+                        let vePriceOne = jQuery('.field-paid-service-select option[value=93]');
+                        let vePriceTwo = jQuery('.field-paid-service-select option[value=90]');
+                        let vePriceThree = jQuery('.field-paid-service-select option[value=96]');
+
+                        vePriceOne.addClass('ve');
+                        vePriceTwo.addClass('ve');
+                        vePriceThree.addClass('ve');
+                        clearInterval( bookForm );
+                    }
+                }, 1000);
+            });
+        }
+    }, 1000);
+});
+  
 });

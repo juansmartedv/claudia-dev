@@ -169,7 +169,7 @@ function claudiasiciliano_scripts() {
 	wp_enqueue_script('aos', 'https://unpkg.com/aos@next/dist/aos.js', array(), null, true);
 
 	//Bundle js
-	wp_enqueue_script('bundle', get_template_directory_uri() . '/dist/assets/js/bundle.js', array('jquery'));
+	wp_enqueue_script('bundle', get_template_directory_uri() . '/dist/assets/js/bundle.js', array('jquery'), null, true);
 }
 add_action( 'wp_enqueue_scripts', 'claudiasiciliano_scripts' );
 
